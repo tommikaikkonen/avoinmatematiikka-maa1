@@ -1,0 +1,332 @@
+.section
+    .wrap
+        .small-caps
+            Luku 3
+        %h1 Rationaaliluvut
+.text-wrapper
+    :markdown
+        *Rationaaliluvulla* tarkoitetaan lukua $q$, joka voidaan esittää
+        muodossa $$q=\frac{a}{b},$$ missä $a$ ja $b$ ovat kokonaislukuja ja
+        $b\neq 0$. Rationaalilukujen joukkoa merkitään symbolilla $\mathbb{Q}$.
+        Rationaaliluvun esitystä osamääränä $\frac{a}{b}$ kutsutaan
+        *murtoluvuksi*. Luku $a$ on murtoluvun *osoittaja* ja luku $b$ on
+        *nimittäjä*. Kaikki rationaaliluvut voidaan esittää murtolukuina, mutta
+        murtoluvut eivät ole ainoa tapa rationaalilukujen esittämiseksi. Kaikki
+        rationaaliluvut voidaan myös esittää usealla eri tavalla murtolukuna.
+        
+    .block
+        :markdown
+            Murtoluku on osamäärä $$\frac{a}{b}$$ missä $a,b \in \mathbb{Z}$ ja
+            $b \neq 0$. Jokaisen murtoluvun arvo on rationaaliluku ja jokainen
+            rationaaliluku voidaan esittää murtolukuna.
+    :markdown  
+        Murtolukujen laskusäännöt
+        -------------------------
+        
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Murtolukujen yhteenlasku. Laske
+            $$\frac{1}{2} + \frac{1}{6} + \frac{2}{6}.$$
+        %h6
+            %i.icon-hand-right
+            Ratkaisu
+        :plain
+            Lavennetaan nimittäjät samannimisiksi ja lasketaan
+            osoittajat yhteen:
+        
+            \begin{align*}
+                \frac{1}{2} + \frac{1}{6} + \frac{2}{6}
+                &=
+                \frac{3\cdot 1}{3\cdot 2} + \frac{1}{6} + \frac{2}{6}\\
+                &=
+                \frac{3}{6} + \frac{1}{6} + \frac{2}{6}\\
+                &= \frac{3+1+2}{6}\\ &= \frac{6}{6} = 1.
+            \end{align*}
+                    
+    .block
+        :markdown
+            Jos murtolukujen nimittäjät ovat samat, voidaan murtoluvut laskea yhteen
+            laskemalla osoittajat yhteen.
+            $$\frac{a}{c} + \frac{b}{c} = \frac{a+b}{c}$$
+            
+    :markdown   
+        Murtolukuja, joiden nimittäjät ovat samat, sanotaan *samannimisiksi*.
+        Jos yhteenlaskettavien murtolukujen nimittäjät eivät ole samat,
+        murtoluvut *lavennetaan* ensin samannimisiksi ja sitten osoittajat
+        lasketaan yhteen. Jos siis $\frac{a}{b}$ ja $\frac{c}{d}$ ovat
+        murtolukuja, lasketaan
+        
+    .block
+        :markdown
+            $$\frac{a}{b} + \frac{c}{d} = \frac{ad}{bd} + \frac{bc}{bd} = \frac{ad+bc}{bd}$$
+            Tässä $\frac{a}{b}$ lavennetaan $d$:llä ja $\frac{c}{d}$ lavennetaan
+            $b$:llä, jolloin saadaan kaksi samannimistä murtolukua, joiden kummankin
+            nimittäjä on yhteenlaskettavien nimittäjien tulo $bd$.
+            
+    :markdown
+        Murtolukujen kertolaskussa osoittajat ja nimittäjät kerrotaan keskenään.
+        $$\frac{3}{4}\cdot \frac{6}{5}= \frac{3\cdot 6}{4\cdot 5}= \frac{18}{20}=\frac{9}{10}$$
+        
+    .block
+        :markdown
+            Murtolukujen $\frac{a}{b}$ ja $\frac{c}{d}$ tulo lasketaan kertomalla
+            lukujen osoittajat ja nimittäjät keskenään:
+            $$\frac{a}{b}\cdot \frac{c}{d} = \frac{a\cdot c}{b\cdot d} = \frac{ac}{cd}$$
+    
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Luvun $5$ *käänteisluku* on $\frac{1}{5}$, koska
+            $$5\cdot \frac{1}{5}=1.$$ Vastaavasti luvun $-\frac{2}{3}$ käänteisluku
+            on $-\frac{3}{2}$, koska $$-\frac{2}{3}\cdot (-\frac{3}{2})=1.$$
+        
+    .block
+        :markdown
+            Rationaaliluvun $a$ ($a\neq 0$) *käänteisluvuku* on $\frac{1}{a}$, sillä
+            $$a\cdot \frac{1}{a} = 1.$$ Vastaavasti rationaaliluvun $\frac{a}{b}$
+            ($a\neq 0$ ja $b\neq 0$) käänteisluku on $\frac{b}{a}$, sillä
+            $$\frac{a}{b}\cdot \frac{b}{a} = 1.$$
+            
+    :markdown
+        **Kahta murtolukua vertailtaessa ne kannattaa ensin laventaa
+        samannimisiksi.**
+        
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Salamipitsa jaetaan kuuteen ja tonnikalapitsa neljään yhtä suureen
+            siivuun. Vesa saa kaksi siivua salamipitsaa ja yhden siivun
+            tonnikalapitsaa. Minttu saa kaksi siivua tonnikalapitsaa. Kumpi saa
+            enemmän pitsaa, jos molemmat pitsat ovat saman kokoisia?
+            
+            tähän kuva pizzoista
+        
+        %h6
+            %i.icon-hand-right
+            Ratkaisu
+        :markdown
+            Huomataan, että $12 = 3\cdot 4 = 2\cdot 6$. Luvut kannattaa pitsan
+            kokonaismäärän laskemista varten laventaa niin, että nimittäjänä on luku
+            $12$. Vesan saama määrä pizzaa on $$\frac{2}{6} + \frac{1}{4} = 
+                        \frac{2\cdot 2}{2\cdot 6} + \frac{3\cdot 1}{3\cdot 4} =
+                        \frac{4}{12}+\frac{3}{12} =
+                        \frac{7}{12}.$$
+            
+            Mintun saama määrä pizzaa on $$\frac{2}{4} =
+                        \frac{3\cdot 2}{3\cdot 4} =
+                        \frac{6}{12}.$$ Koska $6/12 < 7/12$, Vesa saa enemmän.
+                        
+    :markdown
+        Kaikki rationaaliluvut voidaan esittää murtolukumuodossa, mutta myös
+        kokonaisluvut voidaan esittää murtolukuina asettamalla murtoluvun
+        nimittäjäksi yksi. Tätä voidaan käyttää, kun lasketaan yhteen
+        kokonaislukuja ja murtolukuja.
+    
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Laske $$2 + \frac{1}{3}.$$
+            
+        %h6
+            %i.icon-hand-right
+            Ratkaisu
+        :markdown
+            Kirjoitetaan lausekkeen kokonaisluku $2$ murtolukuna, jonka jälkeen
+            voidaan murtoluvut voidaan laventaa samannimisiksi ja laskea yhteen:
+            $$2 + \frac{1}{3} =
+                        \frac{2}{1} + \frac{1}{3} =
+                        \frac{3 \cdot 2}{3 \cdot 1} + \frac{1}{3} =
+                        \frac{6+1}{3} =
+                        \frac{7}{3}.$$
+    :markdown
+        Rationaalilukujen ja murtolukujen erona on, että rationaaliluvut ovat
+        lukujen muodostama joukko, kun taas murtoluvut ovat lukujen esitystapa.
+        Vaihtoehtoinen esitystapa rationaaliluvuille on *desimaaliluvut*,
+        esimerkiksi murtoluku $\frac{1}{2}$ ja desimaaliluku $0,5$ esittävät
+        samaa rationaalilukua.
+        
+        Tehtäviä
+        --------
+        
+        #### Opi perusteet
+        
+        **8.** a) $\frac{3}{11}+\frac{5}{11}$ b) $\frac{4}{5}-\frac{1}{5}$ c)
+        $\frac{2}{3}+\frac{1}{6}$ d) $ \frac{11}{12}-\frac{5}{6}$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer"> Vastaus: a) $\frac{8}{11}$ b) $\frac{3}{5}$ c) $\frac{5}{6}$ d) $\frac{1}{12}$ </div>
+        
+        **9.** a) $1\frac{2}{9}+\frac{5}{9}$ b) $\frac{1}{3}+2\frac{1}{3}$ c)
+        $2+\frac{5}{4}$ d) $ \frac{3}{2}-\frac{5}{6}$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer"> Vastaus: a) $\frac{7}{9}$ b) $\frac{8}{3}$ c) $\frac{9}{4}$ d) $\frac{2}{3}$</div>
+        
+    .side-note
+        %h6
+            %i.icon-info-sign
+            Laskujärjestys
+        :markdown
+            1.  Sulut
+            
+            2.  Potenssilaskut
+            
+            3.  Kerto- ja jakolaskut  
+                vasemmalta oikealle
+            
+            4.  Yhteen- ja jakolaskut  
+                vasemmalta oikealle
+            
+    :markdown
+        **10.** a) $\frac{5}{8}\cdot(\frac{3}{5}+\frac{2}{5})$ b)
+        $\frac{1}{3}+\frac{1}{4}\cdot\frac{6}{5}$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $\frac{5}{8}$ b) $\frac{19}{30}$</div>
+        
+        **11.** a) $\frac{2}{3} : \frac{7}{11}$ b) $\frac{4}{3}:(\frac{-13}{4})$ c)
+        $\frac{7}{8}:4$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $1\frac{1}{21}$ b) $-\frac{16}{39}$ c) $\frac{7}{32}$</div>
+        
+        **12.** Laske murtolukujen $\frac{5}{6}$ ja $-\frac{2}{15}$\
+        a) summa b) erotus c) tulo d) osamäärä.
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $\frac{7}{10}$ b) $\frac{29}{30}$ c) $-\frac{1}{9}$ d)
+        $-6\frac{1}{4}$</div>
+        
+        #### Hallitse kokonaisuus
+        
+        **13.** a) $\dfrac{\frac{1}{2}:\frac{3}{2}}{\frac{3}{2}+\frac{1}{3}}$ b)
+        $\dfrac{\frac{2}{3}+\frac{3}{4}}{\frac{5}{6}-\frac{7}{12}}$.
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $\frac{2}{11}$ b) $5\frac{2}{3}$ </div>
+        
+        **14.** Laske lausekkeen $\frac{x}{2-3x}$ arvo, kun $x$ on\
+        a) 4 b) $-\frac{1}{2}$ c) $\frac{7}{10}$.
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $-\frac{2}{5}$ b) $-\frac{1}{7}$ c) $-7$</div>
+        
+        **15.** Laske lausekkeen $\frac{x+y}{2x-y}$ arvo, kun\
+        a) $x=\frac{1}{2}$ ja $y= \frac{1}{4}$ b) $x=\frac{1}{4}$ ja
+        $y= -\frac{3}{8}$ .
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $1$ b) $-\frac{1}{7}$</div>
+        
+        **16.** Laatikossa on palloja, joista kolmasosa on mustia, neljäsosa valkoisia
+        ja viidesosa harmaita. Loput palloista ovat värikkäitä. Kuinka suuri
+        osuus palloista on värikkäitä?
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: $1-(\frac{1}{3}+\frac{1}{4}+\frac{1}{5})
+                    = \frac{60}{60}-\frac{20}{60}-\frac{15}{60}-\frac{12}{60}
+                    = \frac{60}{60}-\frac{47}{60}
+                    = \frac{13}{60}$</div>
+        
+        ### Sekalaisia tehtäviä
+        
+        **17.** Fibonaccin luvut 0, 1, 1, 2, 3, 5, 8, 13, 21, $\ldots$ määritellään
+        seuraavasti: Kaksi ensimmäistä Fibonaccin lukua ovat 0 ja 1, ja siitä
+        seuraavat saadaan kahden edellisen summana:
+        $$0+1=1, \quad 1+1=2, \quad 1+2 = 3, \quad 2+3=5, \quad 
+        \textrm{ja niin edelleen.}$$ Tutki, miten Fibonaccin luvut liittyvät
+        lukuihin $$\frac{1}{1+1}, \quad \frac{1}{1+\frac{1}{1+1}}, \quad
+        \frac{1}{1+\frac{1}{1+\frac{1}{1+1}}}, \quad 
+        \frac{1}{1+\frac{1}{1+\frac{1}{1+\frac{1}{1+1}}}}, \quad \ldots$$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Luvut ovat sievennettynä peräkkäisten Fibonaccin lukujen osamääriä:
+        $$\frac{1}{2}, \ \frac{2}{3}, \ \frac{3}{5}, \frac{5}{8} \ldots$$
+        
+        Yksi prosentti tarkoittaa yhtä sadasosaa: $1~\% = \frac{1}{100}$</div>
+        
+        **18.** Pontus, Viljami, Jarkko-Kaaleppi, Simo ja Milla leipoivat
+        lanttuvompattipiirakkaa. Pontus kuitenkin söi piirakasta kolmanneksen
+        ennen muita, ja loput piirakasta jaettiin muiden kanssa tasan. Kuinka
+        suuren osan muut saivat?
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Muut saivat piirakasta kuudesosan.</div>
+        
+        **19.** Huvipuiston sisäänpääsylippu maksaa 20 euroa, ja lapset pääsevät sisään
+        puoleen hintaan.
+        
+        a)  Kuinka paljon kolmen lapsen yksinhuoltajaperheelle maksaa päästä
+            sisään?
+        
+        b)  Kuinka paljon sisäänpääsy maksaa perheelle avajaispäivänä, kun
+            silloin sisään pääsee 25 % halvemmalla.
+            
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">a)  50 euroa<br/>
+        
+        b)  50 euroa<br/>
+        
+        c)  37,50 euroa</div>
+        
+        **20.** Laske
+        $\frac{10}{9}\cdot \frac{9}{8}\cdot \frac{8}{7}\cdot \frac{7}{6}\cdot \frac{6}{5}
+                    \cdot \frac{5}{4}\cdot \frac{4}{3}\cdot \frac{3}{2}$.
+                    
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">$\frac{10}{2}=5$.</div>
+        
+        **21.** Eräässä kaupassa on käynnissä loppuunmyynti ja kaikki tuotteet myydään
+        puoleen hintaan. Lisäksi kanta-asiakkaat saavat aina viidenneksen
+        alennusta tuotteiden senhetkisestä hinnasta. Paljonko kanta-asiakas
+        maksaa nyt tuotteesta joka normaalisti maksaisi 40 euroa?
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">$40\cdot \frac{1}{2} \cdot \frac{4}{5}=40\cdot \frac{4}{10}= 16$.</div>
+        
+        **22.** Kokonaisesta kakusta syödään maanantaina iltapäivällä puolet, ja
+        jäljelle jääneestä palasta syödään tiistaina iltapäivällä taas puolet.
+        Jos kakun jakamista ja syömistä jatketaan samalla tavalla koko viikko,
+        niin kuinka suuri osa alkuperäisestä kakusta on jäljellä seuraavana
+        maanantaiaamuna?
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Toisena päivänä aamulla kakkua on jäljellä puolet, kolmantena päivänä
+        aamulla $1-\left(\frac{1}{2} + \frac{1}{4}\right) = \frac{1}{4}$,
+        neljäntenä päivänä
+        $1-\left(\frac{1}{2} + \frac{1}{4} + \frac{1}{8}\right)
+                        = \frac{1}{8}$, jne. Siis seitsemän päivän jälkeen
+        kakkua on jäljellä $1-\left(\frac{1}{2} + \frac{1}{4} + \frac{1}{8} +
+                        \frac{1}{16} + \frac{1}{32} + \frac{1}{64} + \frac{1}{128}\right)
+                        = \frac{1}{128}$. </div>
+        
+        **23.** Ratkaise lausekkeen $\frac{1}{n}-\frac{1}{m}$ arvo, kun tiedetään, että
+        $n = \frac{1}{6}$ ja $m=n+1$.
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">$5 \frac{1}{7}$</div>

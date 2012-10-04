@@ -1,0 +1,603 @@
+.section
+    .wrap
+        .small-caps
+            Luku 2
+        %h1 Kokonaisluvut
+.text-wrapper
+    :markdown            
+        Yksinkertaisimmat käyttämämme luvut ovat lukumäärien ilmaisemiseen
+        käytetyt $0, 1, 2, 3, \ldots$. Näitä kutsutaan *luonnollisiksi
+        luvuiksi*, ja niiden joukkoa eli kaikkia luonnollisia lukuja yhdessä
+        merkitään symbolilla $\mathbb{N}$. Nolla määritellään tässä
+        luonnolliseksi luvuksi, mutta tästä ei ole yhteistä sopimusta: eräät
+        pitävät nollaa luonnollisena lukuna ja toiset eivät.
+        
+        Luonnollisille luvuille $m$ ja $n$ on määritelty yhteenlasku $m + n$,
+        esimerkiksi $5 + 3 = 8$.
+        
+        Luonnollisten lukujen $m$ ja $n$ kertolasku määritellään peräkkäisinä
+        yhteenlaskuina
+    
+    .block
+        :plain
+            $$m \cdot n = \underbrace{m + m + \ldots + m}_{n\text{ kpl}} = \underbrace{n + n + \ldots + n}_{m\text{ kpl}}.$$
+    :markdown
+        Nollalla kertomisen ajatellaan olevan ’’tyhjä yhteenlasku’’ eli nolla:
+    
+    .block
+        :plain
+            $$0 \cdot m = 0$$
+    :markdown
+        Luonnollisten lukujen $m$ ja $n$ erotus määritellään yhteenlaskun
+        avulla: $m-n$ on luku $k$, jolle $k + n = m$. Kahden luonnollisen luvun
+        erotus ei kuitenkaan aina ole luonnollinen luku, esimerkkinä $3 - 5$.
+        Ratkaisemme ongelman määrittelemällä kullekin luonnolliselle luvulle
+        vastaluvun.
+    .block
+        :plain
+            Jokaisella luvulla $n$ on vastaluku $-n$, jolle pätee $n+(-n)=0$.
+    :markdown
+        Luonnolliset luvut ja niiden vastaluvut muodostavat yhdessä
+        kokonaislukujen joukon
+        
+        $$\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}.$$
+        
+        Kun käytämme kokonaislukuja, voidaan kahden luvun erotus määritellä yhteenlaskun ja
+        vastaluvun avulla yksinkertaisesti:
+    .block
+        :plain
+            $$m-n = m+(-n)$$
+    :markdown
+        Esimerkiksi luvun $2$ vastalukua merkitään $-2$, ja sille pätee
+        $2+(-2)=0$. Vastaavasti luvun $-2$ vastaluku on sellainen luku, joka
+        laskettuna yhteen luvun $-2$ kanssa antaa luvun $0$. Tämä on tietysti
+        $2$, koska $-2+2=0$. Näin voidaan huomata, että $-(-2)=2$.
+        
+        Yhteen- ja vähennyslasku
+        ------------------------
+        
+        Kysymys: Mitä saadaan, kun luvusta $5$ vähennetään luku $-8$?
+        
+        Negatiivisten ja positiivisten lukujen yhteen- ja vähennyslaskut voidaan
+        helposti tulkita lukusuoran avulla.
+        
+        $5+8$ ’’viiteen lisätään kahdeksan’’
+        
+        ![image](images/osa1luku2_1.png)
+        
+        $5+(+8)$ ’’viiteen lisätään plus kahdeksan’’
+        
+        $+8$ tarkoittaa samaa kuin $8$. ’$+$’-merkkiä käytetään luvun edessä
+        silloin, kun halutaan korostaa, että kyseessä on nimenomaan positiivinen
+        luku.
+        
+        ![image](images/osa1luku2_2.png)
+        
+        $5-(+8)$ ’’viidestä vähennetään $+8$’’
+        
+        Tämä tarkoittaa samaa kuin 5-8. Lukusuoralla siis liikutaan 8 pykälää
+        taaksepäin.
+        
+        ![image](images/osa1luku2_3.png)
+        
+        Mitä tapahtuu, kun lisätään negatiivinen luku? Kun lukuun lisätään $1$,
+        se kasvaa yhdellä. Kun lukuun lisätään $0$, se ei kasva lainkaan. Kun
+        lukuun lisätään negatiivinen luku, esim. $-1$, on luonnollista ajatella,
+        että se pienenee. Tällä logiikalla negatiivisen luvun lisäämisen pitäisi
+        siis pienentää alkuperäistä lukua. Siksi on sovittu, että $5+(-8)$ on
+        yhtä suuri kuin $5-8$.
+        
+        ![image](images/osa1luku2_4.png)
+        
+        $5-(-8)$ ’’viidestä vähennetään miinus kahdeksan’’
+        
+        Negatiivisen luvun lisääminen on vastakohta positiivisen luvun
+        lisäämiselle. Tällöin on luonnollista, että negatiivisen luvun
+        vähentäminen on vastakohta positiivisen luvun vähentämiselle. Koska
+        positiivisen luvun vähentäminen pienentää lukua, pitäisi negatiivisen
+        luvun vähentämisen kasvattaa lukua. Tämän vuoksi on sovittu, että
+        $5-(-8)$ tarkoittaa samaa kuin $5+8$.
+        
+        ![image](images/osa1luku2_5.png)
+        
+    .block
+        :markdown  
+            Yhteen- ja vähennyslaskun merkkisäännöt
+            
+            -   $a+(-b)=a-b=a-(+b)$
+            
+            -   $-(-a)=a$
+            
+            -   $a-(-b)=a+b=a+(+b)$
+    .block
+        :markdown
+            Yhteen- ja vähennyslasku kumoavat toisensa
+            
+            -   $a+b-b=a$
+            
+            -   $a-b+b=a$
+    :markdown
+        Kertolasku
+        ----------
+        
+        Samaan logiikkaan perustuen on sovittu myös merkkisäännöt positiivisten
+        ja negatiivisten lukujen kertolaskuissa. Kun negatiivinen ja
+        positiivinen luku kerrotaan keskenään, saadaan negatiivinen luku, mutta
+        kun kaksi negatiivista lukua kerrotaan keskenään, saadaan positiivinen
+        luku.
+        
+        $3 \cdot 4$ ’’kolme kappaletta nelosia’’
+        
+    .block
+        %h6
+            %i.icon-warning-sign
+            Puuttuva kuva
+        %p
+            $3 \cdot 4$ lukusuoralla
+    :markdown
+        $3 \cdot (-4)$ ’’kolme kappaletta miinus-nelosia’’
+    
+    .block
+        %h6
+            %i.icon-warning-sign
+            Puuttuva kuva
+        %p
+            $3 \cdot (-4)$ lukusuoralla
+    :markdown
+        $-3 \cdot 4$ ’’miinus-kolme nelinkertaistetaan’’
+    .block
+        %h6
+            %i.icon-warning-sign
+            Puuttuva kuva
+        %p
+            $-3 \cdot 4$ lukusuoralla
+    :markdown
+        $-3 \cdot (-4)$ ’’miinus-kolme miinus-nelinkertaistetaan’’
+    .block
+        %h6
+            %i.icon-warning-sign
+            Puuttuva kuva
+        %p
+            $-3 \cdot (-4)$ lukusuoralla
+    :markdown
+        Jakolasku
+        ---------
+        
+        Kun ensin kerrotaan jollain ja sitten jaetaan samalla luvulla, päädytään
+        takaisin samaan, mistä lähdettiin. Jakolaskujen merkkisäännöt on sovittu
+        niin, että tämä ominaisuus säilyy. Ne ovat siis samat kuin kertolaskujen
+        merkkisäännöt.
+        
+        Esimerkiksi haluamme, että $(-12):(-3)\cdot (-3)=-12$. Nyt voimme kysyä,
+        mitä laskun $(-12):(-3)$ tulokseksi pitäisi tulla, jotta jakolasku ja
+        kertolasku säilyvät toisilleen käänteisinä, eli mikä luku kerrottuna
+        $-3$:lla on $-12$. Kertolaskun merkkisäännöistä nähdään helposti, että
+        tämän luvun täytyy olla $+4$ eli $4$. Niinpä on sovittu, että
+        $(-12):(-3)=12:3=4$.
+        
+    .block
+        :markdown
+            Kerto- ja jakolaskun merkkisäännöt
+            
+            -   $a\cdot (-b)=(-a)\cdot b=-(ab)$
+            
+            -   $(-a)\cdot (-b)=a\cdot b=ab$
+            
+            -   $(-a):b=a:(-b)=-\frac{a}{b}$
+            
+            -   $(-a):(-b)=a: b=\frac{a}{b}$
+    .block
+        :markdown
+            Kerto- ja jakolasku kumoavat toisensa
+            
+            -   $a\cdot b:b=a$
+            
+            -   $a:b\cdot b=a$
+    :markdown
+        Jaollisuus ja tekijöihinjako
+        ----------------------------
+    
+    .block
+        :markdown
+            Kokonaisluku $a$ on jaollinen kokonaisluvulla $b$, jos on olemassa
+            kokonaisluku $c$ niin, että $a = b \cdot c$. Tällöin sanotaan myös, että
+            $b$ on $a$:n tekijä.
+    .example
+        :markdown
+            a)  Luku $-12$ on jaollinen luvulla $3$:lla, sillä $-12 = 3 \cdot (-4)$.
+            
+            b)  $-12$ ei ole jaollinen $5$:llä, sillä ei ole kokonaislukua, joka
+                kerrottuna viidellä olisi $12$.
+    
+    .block
+        %h6
+            %i.icon-exclamation-sign
+            Puuttuva kuva
+        :markdown
+            Kuva, jossa on suorakaide, joka on jaettu 3x4 osaan.
+            
+    :markdown
+        Yllä jaollisuus määritellään kertolaskun avulla. Jaollisuuden voi
+        määritellä myös jakolaskun avulla niin, että $a$ on jaollinen $b$:llä,
+        mikäli $a:b$ on kokonaisluku. Esimerkiksi $12$ on jaollinen $3$:lla,
+        koska $12:3 = 4$, joka on kokonaisluku.
+        
+        Kaikki luvut ovat jaollisia itsellään ja luvulla $1$. Esimerkiksi
+        $7=7 \cdot 1=1 \cdot 7$, joten $7$ on jaollinen $1$:llä ja $7$:llä.
+        
+    .block
+        :markdown
+            *Alkuluku* on ykköstä suurempi luku, joka on jaollinen ainoastaan
+            luvulla $1$ ja itsellään.
+    :markdown
+        Esimerkiksi luvut 2, 3, 5, 7, 11, 13, 17 ja 19 ovat alkulukuja.
+        
+        Kokonaisluvun $n$ tekijöitä, jotka ovat alkulukuja, kutsutaan
+        alkutekijöiksi.
+        
+    .block
+        %h6
+            %i.icon-star
+            Aritmetiikan peruslause
+        :markdown
+            Jokainen ykköstä suurempi kokonaisluku voidaan esittää yksikäsitteisesti
+            alkulukujen tulona.
+    :markdown
+        Aritmetiikan peruslause todistetaan kurssilla Logiikka ja lukuteoria.
+        
+        Esimerkiksi luku $84$ voidaan kirjoittaa muodossa
+        $2\cdot 2\cdot 3\cdot 7$. Kokeilemalla havaitaan, että 2, 3, ja 7 ovat
+        kaikki alkulukuja. Aritmetiikan peruslauseen nojalla tiedetään, että
+        tämä on ainoa tapa kirjoittaa $84$ alkulukujen tulona - mahdollista
+        kertolaskun järjestyksen vaihtoa lukuunottamatta.
+        
+        Lausekkeiden sieventäminen
+        --------------------------
+        
+        Matemaattisia ongelmia ratkaistaessa kannattaa usein etsiä
+        vaihtoehtoisia tapoja jonkin laskutoimituksen, lausekkeen tai luvun
+        ilmaisemiseksi. Tällöin usein korvataan esimerkiksi jokin laskutoimitus
+        toisella laskutoimituksella, josta tulee sama tulos. Näin lauseke
+        saadaan sellaiseen muotoon, jonka avulla ratkaisussa päästään eteenpäin.
+        
+        Matematiikassa on tapana ajatella niin, että saman luvun voi kirjoittaa
+        monella eri tavalla. Esimerkiksi merkinnät $42$, $-(-42)$, $6\cdot 7$ ja
+        $(50-29)\cdot 2$ tarkoittavat kaikki samaa lukua. Niinpä missä tahansa
+        lausekkeessa voi luvun $42$ paikalle kirjoittaa merkinnän
+        $(50-29)\cdot 2$, sillä ne tarkoittavat samaa lukua. Tähän lukuun on
+        koottu sääntöjä, joiden avulla laskutoimituksia voi vaihtaa niin, että
+        lopputulos ei muutu.
+        
+    .block
+        :markdown
+            Yhteenlaskut voi laskea missä järjestyksessä tahansa
+            
+            $a+b=b+a$ (vaihdantalaki)
+            
+            $a+(b+c)=(a+b)+c=a+b+c$ (liitäntälaki)
+        
+    :markdown
+        Esimerkiksi laskemalla voidaan tarkistaa, että $5+7=7+5$ ja että
+        $(2+3)+5=2+(3+5)$.
+        
+        Nämä säännöt voidaan yhdistää yleiseksi säännöksi, jonka mukaan
+        yhteenlaskun sisällä laskujärjestystä voi vaihtaa miten tahansa.
+        
+        Tämä sääntö voidaan yleistää koskemaan myös vähennyslaskua, kun
+        muistetaan, että vähennyslasku tarkoittaa oikeastaan vastaluvun
+        lisäämistä. $5-8$ tarkoittaa siis samaa kuin $5+(-8)$, joka voidaan nyt
+        kirjoittaa yhteenlaskun vaihdantalain perusteella muotoon $(-8)+5$ eli
+        $-8+5$ ilman, että laskun lopputulos muuttuu. Tästä seuraa seuraava
+        sääntö:
+        
+    .block
+        %h6
+            %i.icon-star
+            Sääntö
+        :markdown
+            Pelkästään yhteen- ja vähennyslaskua sisältävässä lausekkeessa
+            laskujärjestystä voi vaihtaa vapaasti, kun ajattelee miinusmerkin
+            kuuluvan sitä seuraavaan lukuun ja liikkuvan sen mukana.
+    
+    :markdown    
+        Esim.
+        
+        $5-8+7-2=5+(-8)+7+(-2)=(-2)+(-8)+5+7=-2-8+5+7$
+        
+        Vastaavat säännöt pätevät kerto- ja jakolaskulle samoista syistä.
+        
+    .block
+        :markdown
+            Kertolaskut voi laskea missä järjestyksessä tahansa
+            
+            $a\cdot b=b\cdot a$ (vaihdantalaki)
+            
+            $a\cdot (b\cdot c)=(a\cdot b)\cdot c=a\cdot b\cdot c$ (liitäntälaki)
+            
+    :markdown
+        Yhteen- ja kertolaskun yhdistää osittelulaki.
+        
+    .block
+        :markdown
+            $a(b+c)=ab+ac$ (osittelulaki)
+    
+    :markdown    
+        Vasemmalta oikealle luettaessa puhutaan sulkujen avaamisesta. Oikealta
+        vasemmalle päin mentäessä puhutaan *yhteisen tekijän ottamisesta*.
+        
+        Esim.
+        
+        $5 \cdot 6 = 6 \cdot 5$
+        
+        $2 \cdot (1+2) = 2 \cdot 1 + 2 \cdot 2$
+        
+    .block
+        :markdown
+            Pelkästään kerto- ja jakolaskua sisältävässä lausekkeessa
+            laskujärjestystä voi vaihtaa vapaasti, kun ajattelee jakolaskun
+            käänteisluvulla kertomisena.
+        
+    :markdown
+        Esim.
+        
+        $5:8\cdot 7:2=5\cdot\frac18\cdot 7\cdot\frac12=7\cdot \frac12\cdot\frac18\cdot 5=7:2:8\cdot 5$
+        
+        Lisäksi yhteen- ja kertolaskua sisältävällä lausekkeelle pätee seuraava
+        erittäin tärkeä sääntö:
+        
+    .block
+        %h6
+            %i.icon-star
+            Sääntö
+        :markdown
+            $a(b+c) = ab+ac$ (osittelulaki)
+        
+    :markdown
+        Aikaisemmin mainittujen laskulakien perusteella osittelulaki voidaan
+        yhdistää koskemaan myös toisin päin olevaa kertolaskun ja yhteenlaskun
+        yhdistelmää, useamman luvun yhteenlaskua, vähennyslaskua ja jakolaskua:
+        
+    .block
+        :markdown
+            -   $(b+c)a = a(b+c) = ab+ac = ba+ca$  
+                (Sovellettu vaihdantalakia)
+            
+            -   $a(b+c+d) = a((b+c)+d) = a(b+c)+ad = ab+ac+ad$  
+                (Sovellettu liitäntälkia)
+            
+            -   $a(b-c) = a(b+(-c))=ab+a\cdot(-c)=ab-ac$  
+                (Sovellettu vähennyslakun määritelmää vastaluvun avulla)
+            
+            -   $(b+c):a = (b+c)\cdot\frac1a = b\cdot\frac1a+c\cdot\frac1a = b:a+c:a$  
+                (Sovellettu jakolaskun ilmaisemista käänteisluvun avulla. Tämä
+                ominaisuus esitellään myöhemmin rationaalilukujen yhteydessä.)
+        
+    :markdown
+        Esimerkiksi seuraava laskutoimitus on helppo laske osittelulain avulla:
+        
+        $2574\cdot 542-2574\cdot 541 = 2574\cdot (542-541) = 2574\cdot 1 = 2574$
+        
+        Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien
+        lausekkeiden muokkaamisessa. Esim. $2(x+5)=2x+10$.
+        
+        Tehtäviä
+        --------
+        
+        **1.** Sievennä:
+        <div class="indent">
+        $(2ab+4b^2-8b^3c):(a+2b-4b^2c)$
+        </div>
+    
+    .button.showanswer Näytä vastaus
+    .answer
+        %p
+            Vastaus:
+        %p
+            $2b$
+            
+    :markdown
+        **2.** Kirjoita laskutoimitukseksi. (Laskuun ei tarvitse merkitä yksikköjä, eli
+        celciusasteita tai euroja.)
+        
+        <div class="indent">
+        
+        a)  Pakkasta on aluksi $-10 ^{\circ}$C, ja sitten se lisääntyy kahdella
+            pakkasasteella.<br/>
+        
+        b)  Pakkasta on aluksi $-20 ^{\circ}$C, ja sitten se hellittää
+            (vähentyy) kolme (pakkas)astetta.<br/>
+        
+        c)  Lämpötila on aluksi $17 ^{\circ}$C, ja sitten se vähentyy viisi
+            astetta.<br/>
+        
+        d)  Lämpötila on aluksi $5 ^{\circ}$C, ja sitten se kasvaa kuusi
+            astetta.<br/>
+        
+        e)  Mies on mafialle $30 000$ euroa velkaa ja menehtyy. Hänen kolme
+            poikaansa jakavat velan tasan keskenään. Kuinka paljon kukin on
+            velkaa mafialle? Merkitse velkaa negatiivisella luvulla.<br/>
+            
+        </div>
+        
+    .button.showanswer Näytä vastaus
+    .answer
+        %p
+            :markdown
+                Vastaus:
+                
+                a)  $-10+(-2)=-12$
+    
+                b)  $-20-(-3)=-17$
+                
+                c)  $17-5=12$
+                
+                d)  $5+6=11$
+                
+                e)  $\frac{-30 000}{3}=10 000$
+            
+    :markdown
+        **3.** Laske
+        
+        <div class="indent">
+        
+        a)  $11+(-14)$<br/>
+        
+        b)  $-8-(-4)$<br/>
+        
+        c)  $-9-(+7)$<br/>
+        
+        d)  $-(-8)+(5)-(-(-11))$<br/>
+        
+        e)  $-8:(-4)$<br/>
+        
+        f)  $(-8):(-4)$<br/>
+        
+        g)  $(-5)\cdot 12$<br/>
+        
+        </div>
+        
+    .button.showanswer Näytä vastaus
+    .answer
+        %p
+            :markdown
+                Vastaus:
+                
+                a)  $2$
+
+                b)  $-3$
+                
+                c)  $-4$
+                
+                d)  $-16$
+                
+                e)  $2$
+                
+                f)  $2$
+                
+                g)  $2$
+                
+                h)  $-60$
+    
+    :markdown
+        **4.** Laske
+        
+        <div class="indent">
+        
+        a)  $3+5$<br/>
+        
+        b)  $10-5-6+1$<br/>
+        
+        c)  $2 \cdot 2 - 1$<br/>
+        
+        d)  $-9 - 5 \cdot (-2) + 3$<br/>
+        
+        e)  $10 \cdot (5 - 2)$<br/>
+        
+        f)  $(2-5)(5 - 1) + 1$<br/>
+        
+        g)  $-9 - 2 \cdot ( 3 - 2 \cdot (3\cdot2 - 1))$<br/>
+        </div>
+        
+    .button.showanswer Näytä vastaus
+    .answer
+        %p
+            :markdown
+                Vastaus:
+                
+                a)  $3$
+
+                b)  $0$
+                
+                c)  $3$
+                
+                d)  $4$
+                
+                e)  $30$
+                
+                f)  $-11$
+                
+                g)  $5$
+            
+    :markdown
+        **5.** Mitkä seuraavista luvuista ovat jaollisia luvulla $4$? Jos luku $a$ on
+        jaollinen luvulla $4$, kerro, millä kokonaisluvulla $b$ pätee
+        $a = 4 \cdot b$.
+        
+        <div class="indent">
+        a) 1 b) 12 c) 13 d) 2 e) -20 f) 0
+        </div>
+        
+    .button.showanswer Näytä vastaus
+    .answer
+        %p
+            :markdown
+                Vastaus:
+                
+                a)  Ei ole jaollinen luvulla 4
+
+                b)  On jaollinen luvulla 4, $12 = 4 \cdot 3$
+                
+                c)  Ei ole jaollinen luvulla 4
+                
+                d)  Ei ole jaollinen luvulla 4
+                
+                e)  On jaollinen luvulla 4, $-20 = 4 \cdot (-5)$
+                
+                f)  On jaollinen luvulla 4, $0 = 4 \cdot 0$
+    :markdown    
+        **6.** Mitkä seuraavista luvuista ovat alkulukuja? Jos luku ei ole alkuluku,
+        esitä se joidenkin kahden kokonaisluvun (jotka eivät ole ykkönen ja luku
+        itse) tulona.
+        <div class="indent">
+        a) 6 b) 11 c) 29 d) -27 e) -11 f) 0
+        </div>
+        
+    .button.showanswer Näytä vastaus
+    .answer
+        %p
+            :markdown
+                Vastaus:
+                
+                a) 6 b) 11 c) 29 d) -27 e) -11 f) 0
+
+                a)  Ei ole alkuluku, esim. $6 = 2 \cdot 3$
+                
+                b)  On alkuluku
+                
+                c)  On alkuluku
+                
+                d)  Ei ole alkuluku, esim. $27 = 3 \cdot (-9)$
+                
+                e)  Ei ole alkuluku, esim. $-11 = (-1) \cdot 11$ Huom. alkuluvut ovat
+                    suurempia kuin yksi (ja siis positiivisia)
+                
+                f)  Ei ole alkuluku, esim. $0 = 6 \cdot 0$
+    
+    :markdown
+        **7.** Jaa seuraavat luvut alkutekijöihin.
+        <div class="indent">
+        a) 12 b) 15 c) 28 d) 30 e) 64 f) 90 g) 100
+        </div>
+    
+    .button.showanswer Näytä vastaus
+    .answer
+        %p
+            :markdown
+                Vastaus:
+                
+                a)  $12 = 2^2 \cdot 3$
+
+                b)  $15 = 3 \cdot 5$
+                
+                c)  $28 = 2^2 \cdot 7$
+                
+                d)  $30 = 2 \cdot 3 \cdot 5$
+                
+                e)  $64 = 2^6$
+                
+                f)  $90 = 2 \cdot 3^2 \cdot 5$
+                
+                g)  $100 = 2^2 \cdot 5^2$
+        
+
+

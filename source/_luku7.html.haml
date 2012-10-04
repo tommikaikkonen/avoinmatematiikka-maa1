@@ -1,0 +1,150 @@
+.section
+    .wrap
+        .small-caps
+            Luku 7
+        %h1 Murtopotenssi
+.text-wrapper
+    :markdown
+        Seuraavaksi tutkitaan potenssin käsitteen laajentamista tilanteeseen,
+        jossa eksponenttina on murtoluku. Esimerkiksi voidaan pohtia, mitä
+        tarkoittaa merkintä $2^\frac{1}{3}$? Potenssin laskusääntöjen
+        perusteella $$(2^{m})^n = 2^{mn},\textrm{ kun }m,n\in \mathbb{Z}.$$
+        Siten on luonnollista ajatella, että murtopotenssille $2^\frac{1}{3}$
+        pätee $$(2^\frac{1}{3})^3 = 2^\frac{3}{3} = 2^1=2.$$
+    %p    
+        Koska luvun $2$
+        kuutiojuuri toteuttaa yhtälön $(\sqrt[3]{2})^3=2$, täytyy siis asettaa
+        $2^\frac{1}{3}=\sqrt[3]{2}$. Yleisemmin asetetaan
+        $a^\frac{1}{n} =\sqrt[n]{a}$, kun $n$ on positiivinen kokonaisluku ja
+        $a\ge 0$.
+    :markdown  
+        Potenssin potenssin kaavaa on luotevaa myös ajatella käyttäen, että
+        esimerkiksi $$(2^{\frac{1}{3}})^2 = 2^{\frac{2}{3}}.$$
+    %p
+        Yleisemmin otetaan murtopotenssin $a^\frac{m}{n}$ määritelmäksi
+        $$a^\frac{m}{n} = (a^{\frac{1}{n}})^m = (\sqrt[n]{a})^m,$$ kun $m$ ja
+        $n$ ovat kokonaislukuja ja $n>0$.
+    .block
+        %h6
+            %i.icon-star
+            Murtopotenssimerkinnät
+        :plain
+            $$a^\frac{1}{n} = \sqrt[n]{a},\textrm{ kun }a\geq 0.$$ Erityisesti
+            $a^\frac{1}{2}=\sqrt{a}$.
+            $$a^\frac{m}{n} =  (\sqrt[n]{a})^m,\textrm{ kun }a\geq 0.$$
+    
+    :markdown
+        Kun murtolukueksponentit määritellään näin, kaikki aikaisemmat
+        potenssien laskusäännöt ovat sellaisenaan voimassa myös niille.
+        Esimerkiksi kaavat
+        $$a^q\cdot a^q = a^{p+q}, \quad (a^p)^q = a^{pq}, \quad (ab)^q=a^qb^q$$
+        pätevät kaikille rationaaliluvuille $p$ ja $q$. Näiden kaavojen
+        todistukset on esitetty liitteissä.
+    
+    %p
+        <strong>Huomautus määrittelyjoukosta.</strong> Murtopotenssimerkintää käyttettäessä vaaditaan, että $a\geq 0$ myös
+        silloin, kun $n$ on pariton. Syy tähän on seuraava. Esimerkiksi
+        $\sqrt[3]{-1}=-1$, koska $(-1)^3=-1$, mutta lauseketta
+        $(-1)^\frac{1}{3}$ ole tällöin määritelty. Murtopotenssimerkinnän
+        määrittelyst tällöin voi seurata yllättäviä ongelmia:
+        $$-1 = \sqrt[3]{-1} = (-1)^\frac{1}{3} = (-1)^\frac{2}{6} = ((-1)^2)^\frac{1}{6} = 1^\frac{1}{6} = \sqrt[6]{1} = 1.$$ Luvun
+        $\frac{1}{3}$ lavennus muotoon $\frac{2}{6}$ on ongelman ydin, mutta
+        murtolukujen lavennussäännöistä lopuminen olisi myös hankalaa. Siksi
+        sovitaan, ettei murtopotenssimerkintää käytetä, jos kantaluku on
+        negatiivinen.
+    
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        %p
+            Muuta lausekkeet $\sqrt[5]{3}$ ja $(\sqrt[4]{a})^7$
+            murtopotenssimuotoon.
+            
+        %h6
+            %i.icon-hand-right
+            Ratkaisu
+        %p
+            $\sqrt[5]{3} = 3^\frac{1}{5}$,\
+            $(\sqrt[4]{a})^7 = (a^\frac{1}{4})^7=a^\frac{7}{4}$
+            
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        %p
+            Sievennä lauseke $8^\frac{2}{3}$.
+            
+        %h6
+            %i.icon-hand-right
+            Ratkaisu
+        %p
+            $8^\frac{2}{3} = (\sqrt[3]{8})^2 = 2^2 = 4.$
+            
+    :markdown
+        Tehtäviä
+        --------
+        
+        Muuta lausekkeet murtopotenssimuotoon:
+        
+    %p
+        <strong>71.</strong> a) $\sqrt[3]{a}$ b) $\sqrt[6]{a}$ c) $\sqrt[n]{a}$
+    .button.showanswer
+        Näytä vastaus
+    .answer  
+        a) $a^\frac{1}{3}$ b) $a^\frac{1}{6}$ c) $a^\frac{1}{n}$
+    %p
+        <strong>72.</strong> a) $(\sqrt[3]{b})^6$ b) $(\sqrt[6]{b^3})$ c) $(\sqrt[5]{b})^2$ d)
+        $(\sqrt[16]{ö^4})$
+    .button.showanswer
+        Näytä vastaus
+    .answer  
+        \a) $b^2$ b) $b^\frac{1}{2}$ c) $b^\frac{2}{5}$ d) $ö^\frac{1}{4}$
+    %p
+        Sievennä:
+    %p  
+        <strong>73.</strong> a) $x^\frac{1}{5}$ b) $x^\frac{4}{3}$ c) $x^\frac{8}{4}$ d)
+        $x^\frac{25}{100}$
+    .button.showanswer
+        Näytä vastaus
+    .answer  
+        \a) $(\sqrt[5]{x})$ b) $(\sqrt[3]{x})^4$ b) $x^2$ d) $(\sqrt[4]{x})$
+    %p
+        <strong>74.</strong> a) $9^\frac{1}{2}$ b) $8^\frac{1}{3}$ c) $4^\frac{3}{2}$ d)
+        $81^\frac{3}{4}$
+    .button.showanswer
+        Näytä vastaus
+    .answer  
+        \a) $3$ b) $2$ b) $8$ d) $27$
+    %p
+        <strong>75.</strong> a) $x^{-\frac{1}{3}}$ b) $x^\frac{5}{-2}$ c) $x^{3 \frac{1}{2}}$ d)
+        $x^{2 \frac{-4}{-7}}$
+    .button.showanswer
+        Näytä vastaus
+    .answer  
+        \a) $\frac{1}{\sqrt[3]{x}}$ b) $\frac{1}{\sqrt{x^5}}$ b) $\sqrt{x^3}$ d)
+        $\sqrt[7]{x^8}$
+    %p
+        <strong>76.</strong> a) $4^\frac{3}{4}$ b) $2^\frac{5}{1}$ c) $16^\frac{2}{3}$ d)
+        $5^\frac{5}{3}$
+    .button.showanswer
+        Näytä vastaus
+    .answer  
+        \a) $2\sqrt{2}$ b) $32$ b) $(\sqrt[3]{16})^2$ d) $5(\sqrt[3]{5})^2$
+    %p
+        Muuta murtopotenssimuotoon:
+    %p  
+        <strong>77.</strong> a) $\sqrt{\sqrt{k}}$ b) $\sqrt[3]{\sqrt[4]{k}}$ c) $\sqrt{m\sqrt{m}}$
+        d) $(\sqrt[5]{m\sqrt[7]{m}})$
+    .button.showanswer
+        Näytä vastaus
+    .answer  
+        \a) $k^\frac{1}{4}$ b) $k^\frac{1}{12}$ b) $m^\frac{3}{4}$ d)
+        $m^\frac{8}{35}$
+    %p
+        <strong>78.</strong> a) $\sqrt[3]{\sqrt[3]{\alpha}^2}$ b) $\sqrt[5]{q^2\sqrt{q}}$ c)
+        $(\sqrt{å^4\sqrt{å}})^3$
+    .button.showanswer
+        Näytä vastaus
+    .answer  
+        \a) $\alpha^\frac{2}{9}$ b) $q^\frac{1}{2}$ c) $å^\frac{27}{4}$

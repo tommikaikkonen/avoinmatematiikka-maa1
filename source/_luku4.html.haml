@@ -1,0 +1,399 @@
+.section
+    .wrap
+        .small-caps
+            Luku 4
+        %h1 Potenssi
+.text-wrapper
+    :markdown
+        Jos $a$ on reaaliluku ja $n$ on positiivinen kokonaisluku, potenssilla
+        $a^n$ tarkoitetaan tuloa
+        $$a^n = \underbrace{a\cdot \ldots \cdot a}_{n\text{ kpl}}.$$ Lukua $a$
+        kutsutaan potenssin *kantaluvuksi* ja lukua $n$ *eksponentiksi*.
+        Merkinnällä $2^4$ siis tarkoitetaan tuloa $2\cdot 2\cdot 2\cdot 2$.
+        Siten $$2^4=2\cdot 2\cdot 2\cdot 2=16.$$ Luvun toista potenssia $a^2$
+        kutsutaan myös luvun $a$ *neliöksi* ja kolmatta potenssia $a^3$ sen
+        *kuutioksi*. Luvun $a>0$ neliö on sellaisen neliön pinta-ala, jonka
+        sivun pituus on $a$. Vastaavasti, jos kuution särmän pituus on $a$, niin
+        $a^3$ on kyseisen kuution tilavuus.
+        
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Potenssien sieventäminen.
+            
+            a)  $(-2)^3 = (-2)\cdot (-2)\cdot (-2) = -8$
+            
+            b)  $(-2)^4 = (-2)\cdot (-2)\cdot (-2)\cdot (-2) = 16$
+            
+            c)  $-2^4   = -(2^4) = -(2\cdot 2\cdot 2\cdot 2) = -16$
+            
+            d)  $2^2\cdot 2^3 =
+                                \underbrace{2\cdot 2}_{\text{$2$ kpl}}\cdot \underbrace{2\cdot
+                                2\cdot 2}_{\text{$3$ kpl}} = \underbrace{2\cdot 2}_{\text{$5$ kpl}}=2^5 = 32$
+            
+            e)  $\displaystyle\frac{2^4\cdot 2^2}{2^3} =
+                                \frac{2\cdot 2\cdot 2\cdot \cancel{2} \cdot \cancel{2}\cdot
+                                \cancel{2}}{\cancel{2}\cdot \cancel{2}\cdot \cancel{2}} = 2^3 = 8$
+                                
+    :markdown
+        Potenssien laskusäännöt
+        -----------------------
+        
+        Samankantaisten potenssien kertolasku
+        $$a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{3 kpl}}\cdot \underbrace{a\cdot a\cdot a\cdot a}_{\text{4kpl}}=a^{\mathbf{3+4}}=a^7$$
+        Samankantaisten potenssien jakolasku
+        $$\frac{a^7}{a^4}=\frac{a\cdot a\cdot a\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}}  {\cancel{a}\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=a^{\mathbf{7-4}}=a^3$$
+        Potenssin potenssi
+        $$(a^2)^3=\underbrace{a^2\cdot a^2\cdot a^2}_{3\text{ kpl}}=\underbrace{a\cdot a\cdot a\cdot a\cdot a\cdot a}_{2\cdot 3=6\text{ kpl}}=a^{\boldsymbol{{2\cdot 3}}}=a^6$$
+        Tulon potenssi
+        $$(ab^5)^3=ab^5\cdot ab^5\cdot ab^5=a\cdot a\cdot a\cdot b^5\cdot b^5\cdot b^5=a^{\mathbf{1\cdot 3}}\cdot b^{\mathbf{5\cdot 3}}=a^3b^{15}$$
+        Osamäärän potenssi
+        $$\left(\frac{a^9}{b^7}\right)^3=\frac{a^9}{b^7}\cdot \frac{a^9}{b^7}\cdot \frac{a^9}{b^7}=\frac{a^9\cdot a^9\cdot a^9}{b^7\cdot b^7\cdot b^7}=\frac{a^{\mathbf{9\cdot 3}}}{b^{\mathbf{7\cdot 3}}}=\frac{a^{27}}{a^{21}}$$
+        
+        Potensseille pätevät seuraavat laskusäännöt.
+        
+    .example
+        %h6
+            %i.icon-hand-right
+            Potenssien laskusääntöjä
+        :markdown
+            Olkoot $m$ ja $n$ kokonaislukuja ja $a$ reaaliluku.
+            
+            $a^m\cdot a^n            = a^{m+n}$                             Samakantaisten potenssien tulo
+            
+            $\displaystyle \frac{a^m}{a^n}= a^{m-n}$                        Samakantaisten potenssien osamäärä ($a\neq 0$)
+            
+            $(a\cdot b)^n            = a^n\cdot b^n$                        Tulon potenssi
+            
+            $\displaystyle \left (\frac{a}{b}\right)^n = \frac{a^n}{b^n}$   Osamäärän potenssi ($b\neq 0$)
+            
+            $(a^m)^n                 = a^{m\cdot n}$                        Potenssin potenssi
+    
+    :markdown
+        Negatiivinen luku ja nolla eksponenttina
+        ----------------------------------------
+        
+        Sievennetään osamäärä $\frac{a^3}{a^5}$ kahdella eri tavalla.
+        Supistamalla yhteiset tekijät lopputulos
+        
+        $$\frac{a^3}{a^5} =
+                \frac{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}{a\cdot a\cdot
+                \cancel{a}\cdot \cancel{a}\cdot \cancel{a}} = 
+                \frac{1}{a\cdot a}=\boldsymbol{\frac{1}{a^2}}$$
+        
+        on erinäköinen, kuin käyttämällä potenssien laskusääntöjä
+        
+        $$\frac{a^3}{a^5} = a^{3-5}=\boldsymbol {a^{-2}}{.}$$
+        
+        Koska lähtötilanne on molemmissa tapauksissa sama, voidaan määritellä,
+        että
+        
+        $$a^{-2} = \frac{1}{a^2}$$
+        
+    .example
+        %h6
+            :plain
+                <i class="icon-hand-right"></i>Negatiivinen eksponentti (kun $a\neq 0$)
+        :markdown  
+            $$a^{-n} = \frac{1}{a^n}$$
+            
+    :markdown
+        Kun eksponenttina on nolla, on tuloksena aina luku $1$ kaikilla nollasta
+        poikkeavilla kantaluvuilla. Esimerkiksi
+        
+        $$\frac{a^3}{a^3}=\frac{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=1,$$
+        
+        mutta sama lasku voidaan laskea myös toisella tavalla:
+        
+        $\frac{a^3}{a^3}=a^{3-3}=a^0$.
+        
+    .example
+        %h6
+            :plain
+                <i class="icon-hand-right"></i>Eksponenttina nolla (kun $a\neq 0$)
+        :markdown 
+            $$a^{0}=1$$
+    
+    :markdown
+        Merkintää $0^0$ ei ole määritelty.
+        
+        Tehtäviä
+        --------
+        
+        #### Opi perusteet
+        
+        Laske.
+        
+        **24.** a) $(-2)\cdot(-2)\cdot(-2)$ b) $(-1)\cdot(-1)\cdot(-1)\cdot(-1)$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $ -8$ b) $1$</div>
+        
+        Sievennä
+        
+        **25.** a) $a\cdot a\cdot a$ b) $a\cdot a\cdot a\cdot b\cdot b\cdot b\cdot b$
+        c) $a\cdot b\cdot a\cdot b\cdot a\cdot b\cdot a$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^3$ b) $a^3b^4$ c) $a^4b^3$</div>
+        
+        Laske.
+        
+        **26.** a) $2^3\cdot2^3$ b) $4^3$ c) $(2^2)^3$ d) $2^{2+2+2}$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $64$ b) $64$ c) $64$ d) $64$</div>
+        
+        Sievennä.
+        
+        **27.** a) $a^3\cdot a^2\cdot a^5$ b) $(a^3)^2$ c) $(a^2a^3)^4$ d) $a^{7-2}$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^{10}$ b) $a^6$ c) $a^{20}$ d) $a^5$</div>
+        
+        Laske.
+        
+        **28.** a) $\displaystyle \frac{2^3}{2^2}$ b) $\displaystyle \frac{2^4}{2^2}$
+        c) $\displaystyle \frac{2^3}{2^1}$ d) $\displaystyle \frac{2^3}{2^0}$ e)
+        $\displaystyle \frac{2^3}{2^4}$ f) $\displaystyle \frac{2^3}{2^5}$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $2$ b) $4$ c) $4$ d) $8$ e) $\frac{1}{2}$ f) $\frac{1}{4}$</div>
+        
+        #### Hallitse kokonaisuus
+        
+        Sievennä.
+        
+        **29.** a) $(1\cdot a)^3$ b) $(a\cdot 2)^2$ c) $(-2abc)^3$ d) $(3a)^4$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^3$ b) $4a^2$ c) $-8a^3b^3c^3$ d) $91a^4$</div>
+        
+        Sievennä.
+        
+        **30.** a) $a^3\cdot b^2\cdot a^5$ b) $(-ab^3)^2$ c) $(a^5a^4)^3$ d) $b(ab)^2$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^8b^2$ b) $a^2b^6$ c) $a^{15}b^{12}$ d) $a^2b^3$</div>
+        
+        Sievennä.
+        
+        **31.** a) $(-a)\cdot(-a)$ b) $(-a)\cdot(-a)\cdot(-b)^3$ c) $(-a^2)\cdot(-a)^2$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^2$ b) $-a^2b^3$ c) $-a^4$</div>
+        
+        Sievennä.
+        
+        **32.** a) $b^3(ab^0)^2$ b) $(ab^3)^0$ c) $(aa^4)^3a^2$ d) $a^3(b^2a)^5$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^2b^3$ b) $1$ c) $a^{17}$ d) $a^8b^{10}$</div>
+        
+        Sievennä.
+        
+        **33.** a) $(\frac{1}{2})\cdot(\frac{1}{2})$ b) $(-\frac{ab^2}{a^2b})^3$ c)
+        $(-a^4b^4)^2$ d) $\left((\frac{a}{b})^4\right)^2$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $\frac{1}{4}$ b) $-\frac{b^3}{a^3}$ c) $a^8b^8$ d) $\frac{a^8}{b^8}$</div>
+        
+        Sievennä.
+        
+        **34.** a) $\frac{6a^9}{3a^2}$ b) $(\frac{a^2b^{-2}}{a^2b})^{-3}$ c)
+        $\frac{5a^2}{-15a}$ d) $\left(-(\frac{10^3}{100b})^2 b^{-1} \right )^2$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $2a^7$ b) $b^9$ c) $-\frac{1}{3}a = -\frac{a}{3}$ d)
+        $\frac{10\ 000}{b^6}$</div>
+        
+        #### Sekalaisia tehtäviä
+        
+        Sievennä.
+        
+        **35.** a) $a^2\cdot a^3$ b) $a^3a^2$ c) $a^2 a$ d) $a a^2 a$ e) $a^2a^1a^3$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^5$ b) $a^5$ c) $a^3$ d) $a^4$ e) $a^6$</div>
+        
+        **36.** a) $a^0$ b) $a^0a^0$ c) $a a^1$ d) $aa^0$ e) $a^0a^1$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $1$ ($a\neq0$, koska $0^0$ ei ole määritelty) b) $1$ c) $a$ d) $a^2$
+        e) $a$</div>
+        
+        **37.** a) $a^1 a a^2$ b) $aaaa$ c) $a^3ba^2$ d) $aba^0ba^1$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $ a^4$ b) $a^4$ c) $a^5b$ d) $a^2b^2$</div>
+        
+        **38.** a) $-a\cdot(-a)$ b) $-a\cdot(-a)\cdot(-b)$ c) $-a^2\cdot(-a^2)$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^2$ b) $-a^2b$ c) $a^4$</div>
+        
+        **39.** a) $-a^3\cdot(-a^2)$ b) $a\cdot(-a)\cdot(-b)$ c) $a^2\cdot(-a^2)$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^5$ b) $a^2b$ c) $-a^4$</div>
+        
+        **40.** a) $0^3\cdot0^3\cdot0^3$ b) $3^1$ c) $2^{2+3}$ d) $2^{6-4}$ e) $5^0$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $1$ b) $3$ c) $32$ d) $4$ e) $1$</div>
+        
+        **41.** a) $(a^3)^1$ b) $(a^6)^2$ c) $(a^2)^4$ d) $(a^1)^3$ e) $(a^0)^5$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^3$ b) $a^{12}$ c) $a^8$ d) $a^3$ e) $1$</div>
+        
+        **42.** a) $(1^3\cdot 2^2)^2$ b) $(1^2\cdot 2^3)^2$ c) $(2^2a^4)^2$ d)
+        $b(3b)^3$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $16$ b) $64$ c) $16a^8$ d) $27b^4$</div>
+        
+        **43.** a) $(a^3b^2)^2$ b) $a(a^2b^3)^4$ c) $(b^2a^4)^5$ d) $b(2ab^2)^3$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a^6b^4$ b) $a^9b^{12}$ c) $a^{20}b^{10}$ d) $8a^3b^7$</div>
+        
+        **44.** a) $\frac{a^3}{a^2}$ b) $\frac{a^4}{a^2}$ c) $\frac{a^3}{a^1}$ d)
+        $\frac{a^3}{a^0}$ e) $\frac{a^3}{a^4}$ f) $\frac{a^3}{a^5}$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $a$ b) $a^2$ c) $a^2$ d) $a^3$ e) $a^{-1} = \frac{1}{a}$ f)
+        $a^{-2} = \frac{1}{a^2}$</div>
+        
+        **45.** a) $\frac{a^2b^2}{ab}$ b) $\frac{a^2b}{a^2}$ c) $\frac{a^3}{a^3}$ d)
+        $\frac{1}{a^0}$ e) $\frac{ab^3}{-b^4}$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $ab$ b) $b$ c) $1$ d) $1$ e) $-\frac{a}{b}$</div>
+        
+        Sievennä ja kirjoita potenssiksi, jonka eksponentti on positiivinen.
+        
+        **46.** \a) $a^{-3}$ b) $\frac{a}{a^3}$ c) $a^{-2}\cdot a^5$ d)
+        $\frac{b}{a^4}b^{-4}$ e) $\frac{a^3}{a^{-5}}$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $\frac{1}{a^3}$ b) $\frac{1}{a^2}$ c) $a^3$ d) $\frac{}{a^4b^3}$ e)
+        $a^8$</div>
+        
+        Esitä ilman sulkuja ja sievennä.
+        
+        **47.** a) $(\frac{1}{2})^2$ b) $(\frac{1}{3})^3$ c) $(\frac{a}{b})^4$ d)
+        $(\frac{a^2}{b^3})^2$ e) $\left(\frac{a^2}{ab^2}\right)^2$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a) $\frac{1}{4}$ b) $\frac{1}{27}$ c) $\frac{a^4}{b^4}$ d)
+        $\frac{a^4}{b^6}$ e) $\frac{a^2}{b^4}$</div>
+        
+        Sievennä.
+        **48.** 
+        a)  $2^3 $
+        
+        b)  $aaaa$
+        
+        c)  $a^3a^2$
+        
+        d)  $0^4$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a)  $8$
+        
+        b)  $a^4$
+        
+        c)  $a^5$
+        
+        d)  $0$
+        </div>
+        **49.**
+        
+        a)  $a^2a^5 $
+        
+        b)  $\frac{a^5}{a^3}$
+        
+        c)  $(a^3)^2$
+        
+        d)  $12^0$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a)  $a^7$
+        
+        b)  $a^2$
+        
+        c)  $a^6$
+        
+        d)  $1$
+        </div>
+        **50.**
+        
+        a)  $a^2(-a^4) $
+        
+        b)  $(ab^2)^0$
+        
+        c)  $(3a)^3$
+        
+        d)  $(a^5b^3)^3$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a)  $-a^6$
+        
+        b)  $1$
+        
+        c)  $27a^3$
+        
+        d)  $a^{15}b^9$
+        </div>
+        **51.**
+        
+        a)  $\frac{2^7}{2^9}$
+        
+        b)  $\frac{a^3}{a}$
+        
+        c)  $\left(\frac{1}{3}\right)^2$
+        
+        d)  $\left(\frac{a^{-2}}{ab^4}\right)^4$
+        
+        <div class="button showanswer">Näytä vastaus</div>
+        
+        <div class="answer">Vastaus: a)  $\frac{1}{4}$
+        
+        b)  $a^2$
+        
+        c)  $\frac{1}{9} $
+        
+        d)  $ \left(\frac{1}{a^{12}b^{16}}\right)$ tai $a^{-12}b^{-16}$
+        </div>
+
+

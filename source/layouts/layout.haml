@@ -1,0 +1,44 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/ [if gt IE 8]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %title= data.page.title || "Avoin Matematiikka 1"
+    %meta{:content => data.page.description || "Oppimateriaali lukion pitkän matematiikan 1. kurssille", :name => "description"}
+    %meta{:content => "width=device-width", :name => "viewport"}
+    <!-- Icons by Font Awesome - http://fortawesome.github.com/Font-Awesome -->
+    = javascript_include_tag "vendor/modernizr-2.5.3.min"
+    = stylesheet_link_tag "site"
+    -# this line is used when building for kaikkonendesign.fi/maa1 = javascript_include_tag "/maa1/javascripts/vendor/modernizr-2.5.3.min"
+    -# this line is used when building for kaikkonendesign.fi/maa1 = stylesheet_link_tag "/maa1/stylesheets/site"
+    :plain
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,400italic' rel='stylesheet' type='text/css'>
+  %body
+    /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    %header
+    %div{:role => "main", :class => "main"}= yield
+    %footer.footer
+      .info
+        %span.head
+          Avoin Matematiikka 1
+        :markdown
+          CC BY 3.0 lisenssillä varustettu pitkän matematiikan  
+          ensimmäisen kurssin oppimateriaali.
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+    %script{:src => "https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"}
+    :javascript
+      window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.7.1.min.js"><\/script>')
+    = javascript_include_tag "site"
+    -# this line is used when building for kaikkonendesign.fi/maa1 = javascript_include_tag "/maa1/javascripts/site"
+    
+    :javascript
+      window.jQuery || document.write('<\/script>')
+      var _gaq=[['_setAccount','UA-35258156-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
