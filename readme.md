@@ -1,32 +1,37 @@
-# Middleman 3.0 Project Template: HTML5 Boilerplate HAML, Normalize, Susy, Sprockets Includes
+# Avoin Matematiikka 1
 
-HTML5 Boilerplate HAML is a project template for [Middleman 3.0](http://www.middlemanapp.com), a Sinatra-based static site generator by [Thomas Reynolds](http://awardwinningfjords.com/). It contains the a HAML-formatted version of the [HTML5 Boilerplate](http://www.html5boilerplate.com), as well as related assets broken up into a Middleman/Rails directory structure and included with Sprockets.
+Avoin Matematiikka on html-versio [Vapaasta Matikasta] (https://github.com/linjaaho/oppikirjamaraton-maa1). Tarkoituksena
+on ainakin tässä vaiheessa päivittää sisältö vastaamaan Vapaata Matikkaa, joten sisällön suhteen virheet kannattaa ilmoittaa
+Vapaan Matikan repositoryyn.
 
-Using Bundler and RVM is **highly** recommended.
+Tällä hetkellä Avointa Matematiikkaa voi lukea osoitteessa [kaikkonendesign.fi/maa1] (http://www.kaikkonendesign.fi/maa1).
 
-Other Features:
+Jos muille kursseille luodaan avoimen lisenssin sisältöä ja lukijakuntaa html-versiolle on, oman domainin alle siirtymistä
+voidaan miettiä.
 
-* [Middleman Livereload](https://github.com/middleman/middleman-livereload)
-* [Middleman Favicon Maker](https://github.com/follmann/middleman-favicon-maker): creates favicons and touch icons on build from `favicon_base.png`
-* [Susy 1.0.rc.1](http://susy.oddbird.net): mobile-first grid setup and ready to go at `stylesheets/partials/grid.css.scss`
-* RVM-ready
-* Some good `.gitignore` defaults
+## Miten voin auttaa?
 
-Hopefully this will save people some time. Add any suggestions to the [issue tracker](https://github.com/dannyprose/Middleman-HTML5-Boilerplate-HAML-Project-Template/issues).
+Koko Vapaata Matikkaa ei ole vielä käännetty Avoimeen Matematiikkaan, joten jäljellä olevissa käännöstöissä apu on tervetullutta!
+Helpoiten kehitysympäristön saat pystyyn, jos käytät Linuxia.
 
-## Usage
+Tällä hetkellä sivusto koostuu [HAML] (http://www.haml.info) tiedostoista, joissa on sekoitettuna HAMLia, [Markdownia] (http://daringfireball.net/projects/markdown/)
+ja LaTeXia.
 
-Download and install into ~/.middleman (you'll have to create this directory if it's not already there). You can then use it with the `--template` flag on `middleman init`. 
+Käännöstyön olen itse hoitanut seuraavasti:
 
-For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/).
+1. Käännä luku Vapaasta Matikasta Markdowniin [Pandocilla] (http://johnmacfarlane.net/pandoc/). Matemaattiset kaavat jäävät automaattisesti LaTeXiin.
+2. Luo uusi .haml tiedosto luvulle, liitä käännetty markdown -sisältö tiedostoon (samalla mallilla kuin edellisissä luvuissa)
+3. Luo haml-koodi laatikoille (otsikko, esimerkit, säännöt, sivulaatikot) manuaalisesti.
+4. Luo haml-koodi harjoituksille (katso malli edellisistä luvuista).
+5. Tarkista, että kaikki näyttää selaimessa ok:lta. Jos markdown -formaatti rikkoo LaTeX -matematiikan, siirrä matematiikka esim. omaksi paragraphiksi hamlilla
+6. Luo linkki uuteen lukuun etusivulle. Edellinen ja seuraava linkit -manuaalisesti kuntoon.
 
-## Recommendations
+Jotta näet tulokset selaimessa, sinun täytyy asentaa [MiddleMan -serveri] (http://middlemanapp.com/) joka kääntää
+hamlit sun muut html:ksi, jota voi sitten katsella selaimella. Repossa on mukana on mukana [Ruby Version Managerin]
+(https://rvm.io/) .rvmrc -tiedosto, jota voi käyttää.
 
-* Update `.rvmrc` to the [gemset](https://rvm.io/gemsets/basics/) of your choosing (or remove it if you do not use [RVM](https://rvm.io/))
-* Double check `.gitignore` and make sure it is what you want.
-  * eg: `build/` is ignored by default.
-* If you don't use `middleman init` to load the template, make sure to [use and run Bundler](http://gembundler.com/).
+## Ota yhteyttä
+Tommi Kaikkonen
+[tommi@kaikkonendesign.fi] (mailto:tommi@kaikkonendesign.fi)
+[Twitter] (https://twitter.com/tommikaikkonen)
 
-## Older Middleman Versions
-
-This will likely work with Middleman 2.x, but it's optimized for Middleman 3.x. You might have a few manual tasks to perform (e.g. bundling after `middleman init`, changing `Gemfile` version numbers, etc.). 
