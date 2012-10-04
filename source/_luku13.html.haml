@@ -1,0 +1,390 @@
+.section
+    .wrap
+        .small-caps
+            Luku 13
+        %h1 Prosenttilaskenta
+.text-wrapper
+    :markdown            
+        Sana prosentti tulee latinan kielen sanoista pro centum, mikä tarkoittaa
+        kirjaimellisesti sataa kohden. Prosentteja käytetään ilmaisemaan
+        suhteellista osuutta. Prosentin merkki on %.
+    
+    .block
+        :markdown
+            1 prosentti $= 1\ \% = \frac{1}{100} = 0,01$
+    
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            -   $6 \ \% = \frac{6}{100} = 0,06$
+            
+            -   $48,2 \ \% = \frac{48,2}{100} = 0,482$
+            
+            -   $140 \ \% = \frac{140}{100} = 1,40$
+        
+        Lukua, josta suhde lasketaan, kutsutaan *perusarvoksi*.
+    
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Jos sadan euron hintaisen tuotteen hintaa on alennettu 25 prosenttia,
+            niin alennettu hinta on 75 euroa. Jos sen sijaan alkuperäinen hinta
+            nousee 15 prosenttia, niin tuotteen uusi hinta on 115 euroa. Perusarvo
+            on molemmissa tapauksissa 100 euroa.
+    
+    .block
+        %h6
+            %i.icon-exclamation-sign
+            Puuttuva kuva
+        :markdown
+            kuva suorakaiteesta, joka kuvaa perusarvoa (se voi olla vaik 10x10
+            pientä laatikkoa. Sit kuva, jossa peruarvosta on vähennetty 25 %
+            perusarvosta, eli 75 laatikkoa. Sit kuva, jossa perusarvoon on lisätty
+            15 %, eli 115 laatikkoa. Sit sopivat havainnollistavat väritykset
+    
+    :markdown
+        Prosentteja käytetään usein ilmaisemaan suureiden muutoksia, esimerkiksi
+        luku $b$ kasvaa luvuksi $a$. *Muutosprosenttia* laskettaessa muutoksen
+        suuruttaa verrataan alkuperäiseen lukuun. Perusarvona on siis
+        alkuperäinen arvo, johon nähden muutos on tapahtunut.
+        
+        Jos kysytään, kuinka monta prosenttia $a$ on isompi $b$:tä, se
+        tarkoittaa samaa, kuin kuinka monta $b$:n sadasosaa on se määrä, jolla
+        $a$ on suurempi $b$:tä. Toisin sanoen kuinka monta $b$:n sadasosaa
+        mahtuu $a-b$:hen. Se saadaan laskemalla
+        
+        $$\frac{a-b}{\frac{b}{100}} = \frac{a-b}{b} \cdot 100$$
+        
+        Samalla tavalla saadaan laskettua, kuinka monta prosenttia luku kasvoi,
+        kun se muuttui $a$:sta $b$:hen.
+    
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Vesan paino on tammikuussa 68 kg ja kesäkuussa 64 kg. Kuinka monta
+            prosenttia Vesa on laihtunut?
+        %h6
+            %i.icon-hand-right
+            Ratkaisu
+        :markdown     
+            Lasketaan
+            
+            $$\frac{68-64}{68} = \frac{4}{68}=0,06 = 6\ \%$$
+        
+        %h6
+            %i.icon-hand-right
+            Vastaus
+        :markdown
+            Vesa on laihtunut $6\ \%$.
+        
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Oppikirjamaraton-tiimi kävi lounastamassa. Osoita oheisen kuitin
+            tiedoilla vääräksi yleinen virhekäsitys, että 13 %:n arvonlisävero olisi
+            13 % lopullisesta myyntihinnasta.
+        
+        %img(src="images/luku13_1.jpg")
+    
+        %h6
+            %i.icon-hand-right
+            Vastaus
+        :markdown
+            13 % sadasta eurosta on 13 euroa, ei 11,50 euroa, niin kuin kuitissa
+            todetaan.
+    
+    :markdown
+        *Vertailuprosentilla* ilmaistaan, kuinka monta prosenttia luku on
+        jostain toisesta luvusta. Vertailuprosentin laskennassa käytetään
+        perusarvona sitä lukua, johon verrataan.
+        
+        Jos kysytään, kuinka monta prosenttia $b$ on $a$:stä, se tarkoittaa
+        samaa, kuin kuinka monta $a$:n sadasosaa $b$ on. Toisin sanoen kuinka
+        monta $a$:n sadasosaa $b$:hen mahtuu. Se saadaan laskemalla
+        
+        $$\frac{b}{\frac{a}{100}} = \frac{b}{a} \cdot 100$$
+        
+    %img(src="images/luku13_2.png")
+    
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Vesa ansaitsee kuukaudessa ${2\,300}$ euroa ja Antero ${1\,700}$ euroa.
+            Kuinka monta prosenttia Anteron tulot ovat Vesan tuloista?
+            
+        %h6
+            %i.icon-hand-right
+            Ratkaisu
+        :markdown
+            Lasketaan
+            
+            $$\frac{1700}{2300}  \approx 0,74 = 74 \  \%.$$
+            
+            Laskuissa käytettävä perusarvo on Vesan palkka eli 2300 euroa.
+            
+        %h6
+            %i.icon-hand-right
+            Ratkaisu
+        :markdown
+            $74~\%$
+    
+    :markdown
+        *Prosenttiyksikkö* mittaa prosenttiosuuksien välisiä eroja. Esimerkiksi
+        $4\ \%$ on $2$ prosenttiyksikköä suurempi kuin $2\ \%$, mutta $100\ \%$
+        suurempi kuin $2\ \%$. Jos prosenttiluku muuttuu, muutos voidaan
+        ilmaista joko prosentteina tai prosenttiyksikköinä.
+    
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Tuotteen markkinaosuus on vuoden tammikuussa 10 % ja kesäkuussa 15 %.
+            
+            a)  Kuinka monta prosenttia tuotteen markkinaosuus on noussut?
+            
+            b)  Kuinka monta prosenttiyksikköä tuotteen markkinaosuus on noussut?
+            
+        %h6
+            %i.icon-hand-right
+            Ratkaisu
+        :markdown
+            a)  Tuotteen markkinaosuus on noussut
+                $$\frac{15-10}{10} = \frac{5}{10} = 50\ \%.$$
+            
+            b)  Tuotteen markkinaosuus on noussut $15-10=5$ prosenttiyksikköä.
+            
+        %h6
+            %i.icon-hand-right
+            Vastaus
+        :markdown
+            a)  50 prosenttia
+            
+            b)  5 prosenttiyksíkköä.
+    
+    :markdown
+        Tehtäviä
+        --------
+        
+        **Tehtävä.** Laukun normaalihinta on 225 euroa, ja se on 25 %:n alennuksessa. Mikä on
+        alennettu hinta?
+    .button.showanswer
+        Näytä vastaus
+    .answer
+        :plain
+            Vastaus: 168,75 euroa
+            
+    :markdown
+        **Tehtävä.** Jaakon kuukausipalkka on 1623,52 euroa. Hän saa 1,3 % palkankorotuksen.
+        Mikä on Jaakon kuukausipalkka korotuksen jälkeen?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            1644,63 euroa
+    
+    :markdown
+        **Tehtävä.** Kirjan myyntihinta, joka sisältää arvolisäveron, on 9 % suurempi kuin
+        kirjan veroton hinta. Laske kirjan veroton hinta, kun myyntihinta on 27
+        €.
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :plain
+            Vastaus: Kirjan veroton hinta on 24,77 €.
+    
+    :markdown
+        **Tehtävä.** Sokerijuurikkaassa on 18 % sokeria. Kuinka paljon sokerijuurikkaita
+        tarvitaan valmistettaessa 8 tonnia sokeriliuosta, jonka sokeripitoisuus
+        on 4,5 %?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :plain
+            Vastaus: 2 tonnia
+    
+    :markdown
+        **Tehtävä.** Perussuomalaisten kannatus oli vuoden 2007 eduskuntavaaleissa 4,1 % ja
+        vuoden 2011 eduskuntavaaleissa 19,1 %. Kuinka monta prosenttiyksikköä
+        kannatus nousi? Kuinka monta prosenttia kannatus nousi?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            Vastaus: Kannatus nousi 15 prosenttiyksikköä. Prosentteina mitattuna
+            kannatus nousi 366 %.
+    
+    :markdown
+        **Tehtävä.** Askartelukaupassa on alennusviikot, ja kaikki tavarat myydään 60 %:n
+        alennuksella. Viimeisenä päivänä kaikista hinnoista annetaan vielä
+        lisäalennus, joka lasketaan aiemmin alennetusta hinnasta. Minkä
+        suuruinen lisäalennus tulee antaa, jos lopullisen kokonaisalennuksen
+        halutaan olevan 80 %?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            Vastaus: 50 %.
+    :markdown
+        **Tehtävä.** Hedelmissä on vettä aluksi 60 %. Kuinka monta prosenttia vedestä on
+        haihdutettava, jotta hedelmissä tämän jälkeen olisi vain 20 % vettä?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :plain
+            Vastaus: 50 %.
+    
+    :markdown    
+        **Tehtävä.** Erään pankin myöntämä opintolaina kasvaa korkoa 2 % vuodessa. Kuinka
+        monta prosenttia laina on kasvanut korkoa alkuperäiseen verrattuna
+        kymmenen vuoden kuluttua?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :plain
+            Vastaus: 22 %.
+    
+    :markdown    
+        **Tehtävä.** Samulin pituus on 165 cm ja Joonaksen 173 cm.
+        
+        1.  Kuinka monta prosenttia Samulin pituus on Joonaksen pituudesta?
+        
+        2.  Kuinka monta prosenttia Samuli on lyhyempi kuin Joonas?
+        
+        3.  Kuinka monta prosenttia Joonas on pidempi kuin Samuli?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            1.  95,4 %
+            
+            2.  4,62 %
+            
+            3.  4,85 %
+    
+    :markdown
+        **Tehtävä.** Yleinen arvonlisäveroprosentti oli Suomessa vuonna 2012 23 % tuotteen
+        verottomasta hinnasta. Tuotteen hinta koostuu sen verottomasta hinnasta
+        ja tuotteesta maksettavasta arvonlisäverosta. Kuinka monta prosenttia
+        arvonlisävero on tuotteen myyntihinnasta?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            18,7 %
+    
+    :markdown
+        **Tehtävä.** Kun matkalipun hintaa korotettiin 10,0 %, matkustajien määrä väheni
+        10,0 %. Kuinka monella prosentilla tällöin lisääntyivät tai vähentyivät
+        liikennöitsijän lipputulot?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            Vähentyvät 1 prosentilla.
+    
+    :markdown
+        **Tehtävä.** Tuoreissa omenissa on vettä 80 % ja sokeria 4 %. Kuinka monta prosenttia
+        sokeria on samoissa omenissa, kun ne on kuivattu siten, että
+        kosteusprosentti on 20? \[K2000, 4]
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :plain
+            Vastaus: 16 %
+    
+    :markdown
+        **Tehtävä.** Kappaleen putoamisen kesto maahan korkeudelta $x$ on kääntäen
+        verrannollinen putoamiskiihtyvyyden $g$ neliöjuureen. Vakio $g$ on
+        kullekin taivaankappaleelle ominainen ja eri puolilla taivaankappaletta
+        likimain sama. Empire State Buildingin katolta (korkeus $381$ m)
+        pudotetulla kuulalla kestää n. $6,2$ s osua maahan. Marsin
+        putoamiskiihtyvyys on $37,6$ % Maan putoamiskiihtyvyydestä.
+        
+        Jos Empire State Building sijaitsisi Marsissa, kuinka monta prosenttia
+        pitempi aika kuluisi kuulan maahan osumiseen?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :plain
+            Vastaus: $10$ s
+    
+    :markdown
+        **Tehtävä.** Matin ja Iidan duo saa julkisuutta, ja he alkavat myydä CD-levyään
+        keikkojen yhteydessä 10 euron kappalehinnalla. Jonkin ajan päästä he
+        päättävät laskea CD:n hintaa 20 prosenttia. Matti alkaa kuitenkin katua
+        päätöstä, ja ehdottaa tämän alennetun hinnan korottamista 20
+        prosentilla. Mikä olisi tämän toimenpiteen jälkeen CD:n uusi hinta?
+        Montako prosenttia olisi korotuksen oltava, jotta oikeasti päästäisiin
+        takaisin alkuperäiseen 10 euron hintaan?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            25 %
+    
+    :markdown
+        **Tehtävä.** Jalkapalloilija Georgios Samaras teki ensimmäisellä kaudellaan
+        Skotlannin valioliigassa (2007-08) 5 maalia Celtic F.C.:n paidassa.
+        Seuraavalla kaudella Samaras teki Celticille liigassa 15 maalia. Kuinka
+        monta prosenttia Samaraksen maalimäärä nousi?
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            200 %
+    
+    .side-note#l12
+        :markdown
+            1\. vuokra, ruotsin sanasta *hyra*
+    :markdown
+        **Tehtävä.** Kaupungissa tuli jokaisen talonomistajan suorittaa kaupungin kassaan 5 %
+        saadusta hyyrymäärästä<sup>1</sup>. Sittemmin määrättiin, että mainittu
+        prosentti oli oleva 10. Monellako prosentilla täytyy talonomistajien
+        korottaa hyyryjä saadakseen saman puhtaan säästön kuin ennen? \[YO 1877,
+        4]
+    
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            5,6 %

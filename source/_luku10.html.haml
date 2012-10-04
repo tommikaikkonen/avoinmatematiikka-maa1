@@ -1,0 +1,138 @@
+.section
+    .wrap
+        .small-caps
+            Luku 10
+        %h1 Yhtälö
+.text-wrapper
+    :markdown            
+        Monissa käytännön tilanteissa jokin suure voidaan päätellä tai laskea
+        kahdella eri tavalla. Nämä tavat voidaan merkitä lukuina tai kirjoittaa
+        lausekkeiksi. Merkitsemällä näin saadut lukuarvot ja lausekkeet
+        yhtäsuuriksi saadaan *yhtälö*. Yhtälö on siis kahden lausekkeen merkitty
+        yhtäsuuruus. Yhtälöitä esiintyy usein käytännön tilanteissa.
+        
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Merkitään lausekkeet $5x+\sqrt{x}$ ja $7x+7$ yhtäsuuriksi,  
+            jolloin saadaan yhtälö $5x+\sqrt{x} = 7x+7$.
+    .block
+        :markdown
+            Jos yhtälön kummankin puolen lausekkeen arvo on sama, sanotaan että
+            *yhtälö pätee*.
+            
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            a)  Yhtälö $3x + 2 = 0$ pätee, kun $x = - \frac{2}{3}$.
+            
+            b)  Yhtälö $5 = 3$ ei päde.
+            
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+            
+        %img(src="images/luku10_1.png")
+        :markdown
+            Kuvassa oleva vaaka on tasapainossa. Toisessa vaakakupissa on kahden
+            kilon siika ja toisessa puolen kilon ahven sekä tuntematon määrä
+            lakritsia. Kuinka paljon vaakakupissa on lakritsia?
+        
+        %h6
+            %i.icon-hand-right
+            Ratkaisu
+        :markdown
+            Merkitään lakritsin määrää tuntemattomalla $x$. Tilannetta kuvaa yhtälö
+            
+            $$2 = 0{,5} + x.$$
+            
+            Ratkaistaan yhtälö.
+        :plain
+            \begin{align*}
+            2 &= 0{,5} + x &&\text{| $-0{,5}$} \\
+            2 - 0{,5} &= x && \\
+            1{,5} &= x && \\
+            x &= 1{,5} && \\
+            \end{align*}
+        %h6
+            %i.icon-hand-right
+            Vastaus
+        :markdown
+            Lakritsia on $1{,5}$ kg.
+        
+    :markdown
+        -   Yhtälössä esiintyy yleensä *tuntemattomia*, joiden arvoa ei tiedetä
+            ja joita merkitään eri symboleilla. Jos tuntemattomia on vain yksi,
+            sitä merkitään yleensä kirjaimella $x$.
+        
+        -   Niitä tuntemattoman $x$ arvoja, joilla yhtälö pätee, kutsutaan
+            yhtälön *ratkaisuiksi*.
+        
+        -   Yhtälön ratkaisemisella tarkoitetaan kaikkien yhtälön ratkaisujen
+            selvittämistä.
+        
+    .block
+        :markdown
+            Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna
+            toisella tavalla. Käytännössä se tarkoittaa sitä, että niitä muokkaa
+            siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. Tällaisia
+            sallittuja muunnoksia ovat esimerkiksi:
+            
+            -   Yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta
+                voidaan vähentää luku. Esimerkiksi yhtälö $3x+5 = 3$ saadaan näin
+                muotoon $3x = -2$.
+            
+            -   Yhtälön molemmat puolet voidaan kertoa nollasta poikkeavalla
+                luvulla. Esimerkiksi kertomalla yhtälön $2x = 4$ molemmat puolet
+                luvulla $\frac{1}{2}$ saadaan yhtälö $x = 2$.
+                
+    :markdown
+        Kuvitellaan orsivaaka, joka on tasapainossa. Vasemmalla ja oikealla
+        puolella on eripainoisia esineitä, mutta ne painavat yhteensä yhtä
+        paljon. Jos molemmille puolille lisätään nyt saman verran painoa, vaaka
+        on yhä tasapainossa. Samalla tavalla yhtälön molemmille puolille on
+        sallittua lisätä sama luku.
+        
+        Yhtälöt ratkeavat siten, että niitä muokataan, kunnes vastauksen voi
+        lukea siitä suoraan, esim $x=3$.
+    
+    .block
+        :markdown
+            Yhtälöitä on kolmenlaisia:
+            
+            1.  Yhtälö, joka on aina tosi. Esimerkiksi yhtälöt $8=8$ ja $x=x$.
+            
+            2.  Yhtälö, joka on joskus tosi. Esimerkiksi yhtälö $x+4=7$ on tosi, kun
+                $x=3$, ja epätosi muulloin.
+            
+            3.  Yhtälö, joka ei ole koskaan tosi. Esimerkiksi yhtälö $0=1$.
+        
+    :markdown
+        Tärkeimpiä näistä ovat joskus todet yhtälöt.
+    
+    .block
+        :markdown
+            Yleisiä yhtälönratkaisuperiaatteita:
+            
+            -   Kerro tuntematonta sisältävät lausekkeet pois nimittäjistä.
+            
+            -   Yhdistä useat murtolausekkeet yhdeksi laventamalla.
+            
+            -   Yhdistä tuntemattomat.
+            
+            -   Kumoa juuret korottamalla yhtälö puolittain sopivaan potenssiin.
+            
+            -   Sulkuja ei välttämättä aina kannata kertoa auki.
+            
+            -   Yhtälö on ratkaistu vasta, kun jäljellä on enää vain yksi kappale
+                tuntematonta suuretta, ja se sijaitsee yksin omalla puolellaan
+                yhtälöä.
+                
+    :markdown
+        Siirrymme nyt tarkastelemaan tärkeää yhtälöiden lajia, ensimmäisen
+        asteen yhtälöitä.

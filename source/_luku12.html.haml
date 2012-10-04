@@ -1,0 +1,266 @@
+.section
+    .wrap
+        .small-caps
+            Luku 12
+        %h1 Suoraan ja kääntäen verrannollisuus
+.text-wrapper
+    :markdown            
+        Kaksi muuttujaa voivat riippua toisistaan monin eri tavoin. Tavallisia
+        riippuvuuden tyyppejä ovat suoraan ja kääntäen verrannollisuus.
+        
+        Kaksi muuttujaa $x$ ja $y$ ovat suoraan verrannolliset, jos toinen
+        saadaan toisesta kertomalla se jollakin vakiolla, eli $y = kx$. Vakiota
+        $k$ kutsutaan *verrannollisuuskertoimeksi*.
+        
+        Jos suureet $x$ ja $y$ ovat suoraan verrannolliset, niin tätä merkitään
+        $x\sim y$ tai $x\propto y$.
+        
+        Suoraan verrannollisuus voidaan tunnistaa esimerkiksi laskemalla
+        muuttujien suhde ja toteamalla, että se on muuttujista riippumaton
+        vakio.
+        
+    .side-note#l12
+        :markdown
+            1\. Fysikaalisesti kyse on massasta, mutta arkikielessä käytetään
+            sanaa paino.
+    
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Banaanien kilohinta on $2,00$ euroa. Seuraavassa taulukossa on banaanien
+            paino<sup>1</sup>, jonka saa ostettua tietyllä rahamäärällä:
+            
+        %table#l12-1
+            %tr
+                %th Hinta (euroa)
+                %th Paino (kg)
+                %th Hinta/paino (euroa/kg)
+            %tr
+                %td $1,00$
+                %td $0,50$
+                %td $2,00$
+            %tr
+                %td $2,00$
+                %td $1,00$
+                %td $2,00$
+            %tr
+                %td $3,00$
+                %td $1,50$
+                %td $2,00$
+            %tr
+                %td $4,00$
+                %td $2,00$
+                %td $2,00$
+        
+        :markdown
+            Hinnan ja painon suhde on vakio, $2,00$ euroa/kg, joten ostettujen
+            banaanien paino ja niihin käytetty rahamäärä ovat suoraan
+            verrannolliset.
+    
+    :markdown
+        Suoraan verrannollisuutta voidaan kuvata myös niin, että jos toinen
+        muuttujista kaksinkertaistuu, niin toinenkin kaksinkertaistuu. Samoin
+        jos toisen muuttujan arvo puolittuu, toisenkin arvo puolittuu.
+        
+        Jos suoraan verrannollisista muuttujista piirretään kuvaaja, pisteet
+        asettuvat suoralle:
+    
+    .block
+        %h6
+            %i.icon-exclamation-sign
+            Puuttuva kuva
+        :markdown
+            Kuva, johon piirretty vaaka-akselille käytetty rahamäärä ja
+            pystyakselille ostettujen banaanien paino.
+    
+    :markdown
+        Suoraan verrannollisia muuttujia ovat myös esimerkiksi
+        
+        -   aika ja kuljettu matka, kun liikutaan vakionopeudella, tai
+        
+        -   kappaleen massa ja painovoiman kappaleeseen aiheuttama voima.
+        
+        Suoraan verrannollisuutta monimutkaisempi riippuvuus on kääntäen
+        verrannollisuus.
+    
+    .block
+        :markdown
+            Muuttujat $x$ ja $y$ ovat kääntäen verrannolliset, jos toinen saadaan
+            toisesta jakamalla jokin vakio sillä, eli $y = \frac{a}{x}$.
+            
+    :markdown 
+        Kääntäen verrannollisuus voidaan tunnistaa esimerkiksi kertomalla
+        muuttujien arvoja keskenään ja huomaamalla, että tulo on muuttujista
+        riippumaton vakio.
+    
+    .example
+        %h6
+            %i.icon-hand-right
+            Esimerkki
+        :markdown
+            Nopeus ja matkaan tarvittava aika ovat kääntäen verrannolliset. Jos
+            kuljettavana matkana on $80$ km, voidaan nopeudet ja matka-ajat
+            kirjoittaa taulukoksi:
+            
+        %table#l12-2
+            %tr
+                %th Nopeus (km/h)
+                %th Matka-aika (h)
+                %th Nopeus$\cdot$matka-aika (km)
+            %tr
+                %td $40$
+                %td $2$
+                %td $80$
+            %tr
+                %td $80$
+                %td $1$
+                %td $80$
+            %tr
+                %td $100$
+                %td $0,8$
+                %td $80$
+                
+        :markdown
+            Tulo on aina $80$ km, joten nopeus ja matka-aika ovat kääntäen
+            verrannolliset.
+        
+    :markdown
+        Kääntäen verrannollisuutta voidaan kuvata myös niin, että jos toinen
+        muuttujista kaksinkertaistuu, toinen puolittuu.
+        
+        Jos kääntäen verrannollisista muuttujista piirretään kuvaaja, pisteet
+        muodostavat laskevan käyrän:
+    
+    .block
+        %h6
+            %i.icon-exclamation-sign
+            Puuttuva kuva
+        :markdown
+            Kuva, johon on piirretty matka-aika ja nopeus (yllä olevan taulukon
+            mukaisesti).
+    
+    :markdown
+        Kääntäen verrannollisia muuttujia ovat myös esimerkiksi
+        
+        -   kaivamistyön suorittamiseen kuluva aika ja työntekijöiden lukumäärä.
+        
+        Tehtäviä
+        --------
+        
+        **Tehtävä.** Tutkitaan seuraavia muuttujapareja:
+        
+        1.  Neliön sivun pituus ja neliön pinta-ala.
+        
+        2.  Kuljettu matka ja kulunut aika, kun nopeus on vakio.
+        
+        3.  Dieselin hinta ja 50 eurolla saatavan dieselin määrä.
+        
+        4.  Irtomyynnistä ostetun suolakurkkuerän paino ja hinta.
+        
+        Miten toinen muuttuja muuttuu ensimmäisen kaksinkertaistuessa tai
+        puolittuessa? Ovatko muuttujat suoraan tai kääntäen verrannolliset vai
+        eivät kumpaakaan?
+        
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            Vastaus:
+            
+            1.  Eivät ole.
+            
+            2.  Suoraan verrannolliset.
+            
+            3.  Kääntäen verrannolliset.
+            
+            4.  Suoraan verrannolliset.
+    
+    :markdown
+        **Tehtävä.** Ratkaise
+        
+        1.  $ \frac{x}{3} = 1$
+        
+        2.  $ \frac{8}{x} = 2$
+        
+        3.  $ \frac{7}{x} = \frac{16}{8}$
+        
+        4.  $ \frac{x}{3} = \frac{1}{7}$
+        
+    .button.showanswer
+        Näytä vastaus
+        
+    .answer
+        :markdown
+            1.  $x= \frac{1}{3}$
+            
+            2.  $y= \frac{1}{4}$
+            
+            3.  $x= \frac{7}{2}$
+            
+            4.  $x= \frac{3}{7}$
+    
+    :markdown
+        **Tehtävä.** Muodosta seuraavia tilanteita kuvaavat yhtälöt.
+        
+        1.  Kultakimpaleen arvo ($x$) on suoraan verrannollinen sen massaan
+            ($m$), eli mitä painavampi kimpale on, sitä enemmän siitä saa rahaa.
+        
+        2.  Aidan maalaamiseen osallistuvien ihmisten määrä $x$ on kääntäen
+            verrannollinen maalaamiseen kuluvaan aikaan ($t$). Toisin sanoen,
+            mitä enemmän maalaajia, sitä nopeammin homma on valmis.
+        
+        3.  Planeettojen toisiinsa aiheuttama vetovoima ($F$) on suoraan
+            verrannollinen planeettojen massoihin ($m_1$ ja $m_2$) ja kääntäen
+            verrannollinen niiden välisen etäisyyden ($r$) neliöön.
+    
+    .button.showanswer
+        Näytä vastaus
+        
+    .answer
+        :markdown
+            1.  $ \frac{x}{m}=c$
+            
+            2.  $ xt=c $
+            
+            3.  $ \frac{Fr^2}{m_1+m_2}=c$
+    
+    :markdown
+        **Tehtävä.** Rento pyöräilyvauhti kaupunkiolosuhteissa on noin $20$ km/h. Lukiolta
+        urheiluhallille on matkaa $7$ km. Kuinka monta minuuttia kestää arviolta
+        pyöräillä lukiolta urheiluhallille?
+        
+    .button.showanswer
+        Näytä vastaus
+    
+    .answer
+        :markdown
+            Viiden minuutin tarkkuudella $20$ min.
+            
+    :markdown
+        **Tehtävä.** Isä ja lapset ovat ajamassa mökille Sotkamoon. On ajettu jo neljä
+        viidesosaa matkasta, ja aikaa on kulunut kaksi tuntia. ’’Joko ollaan
+        perillä?’’ lapset kysyvät takapenkiltä. Kuinka pitkään vielä arviolta
+        kuluu, ennen kuin ollaan mökillä?
+    
+    .button.showanswer
+        Näytä vastaus
+        
+    .answer
+        :markdown
+            Vastaus: 30 min
+            
+    :markdown
+        **Tehtävä.** Äidinkielen kurssilla annettiin tehtäväksi lukea 300-sivuinen romaani.
+        Eräs opiskelija otti aikaa ja selvitti lukevansa vartissa seitsemän
+        sivua. Kuinka monta tuntia häneltä kuluu koko romaanin lukemiseen, jos
+        taukoja ei lasketa?
+        
+    .button.showanswer
+        Näytä vastaus
+        
+    .answer
+        :markdown
+            Vastaus: 642 minuuttia eli 10 h 42 min.
