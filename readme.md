@@ -29,7 +29,7 @@ Käännöstyön olen itse hoitanut seuraavasti:
 
 Jotta näet tulokset selaimessa, sinun täytyy asentaa [MiddleMan -serveri] (http://middlemanapp.com/) joka kääntää
 hamlit sun muut html:ksi, jota voi sitten katsella selaimella. Repossa on mukana on mukana [Ruby Version Managerin]
-(https://rvm.io/) .rvmrc -tiedosto, jota voi käyttää.
+(https://rvm.io/) .rvmrc -tiedosto, jota voi käyttää. Muista ajaa bundle update.
 
 ## Ota yhteyttä
 Tommi Kaikkonen
